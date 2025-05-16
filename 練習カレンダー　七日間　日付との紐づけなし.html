@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>カレンダー</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 400px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      width: 14.2%; /* 100 ÷ 7日分 */
+      height: 50px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .saturday,td:nth-child(6) {
+        background-color: rgb(205, 240, 240);
+    }
+    .sunday,td:nth-child(7) {
+        background-color: rgb(243, 207, 214);
+    }
+  </style>
+</head>
+<body>
+  <h2 id="dateTitle"></h2>
+
+  <table>
+    <thead>
+      <tr>
+
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+        <th class="saturday">土</th>
+        <th class="sunday">日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="tBody"></tr>
+  </table>
+  <script src="./JS.js"></script>
+</body>
+</html>
