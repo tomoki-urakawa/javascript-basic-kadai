@@ -8,7 +8,7 @@
 
 //4⃣ 1週間ずつ <tr> を作る
 
-//5⃣ 日付が始まる前や終わった後は空白にする
+//5⃣ 日付が始まる前や終わった後は空白にする(if処理)
 
 //6⃣ 日付をセルに入れてインクリメントする
 
@@ -45,10 +45,10 @@ const lastDate = new Date(year, month, 0).getDate();
 
 
 //日付を表示する
-const tBody = document.querySelector("tbody");
+const tBody = document.querySelector("tbody");//カレンダーの中身（tbody）を定数tBodyとして編集できるようにする
 
 
-let date = 1;//日付は動くので変数として定義する
+let date = 1;//日付は動くので変数dateとして定義する
 
 
 while (date <= lastDate) {
